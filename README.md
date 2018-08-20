@@ -17,7 +17,7 @@ const store = glob(new Store())
 
 ```js
 await store.set("glob.myApp.pattern", "**/*.js")
-
-store.get("glob.myApp.paths")
-// array of paths
+store.get("glob.myApp.paths") // array of paths
 ```
+
+Substitute `myApp` for any key you like.
