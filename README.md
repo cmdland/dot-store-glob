@@ -7,17 +7,17 @@ Glob filename matching with `dot-store`.
 ## Create store
 
 ```js
-import Store from "dot-store"
+import createStore from "dot-store"
 import glob from "@dot-store/glob"
 
-const store = glob(new Store())
+const store = glob(createStore())
 ```
 
 ## Glob some files
 
 ```js
-await store.set("glob.myApp.pattern", "**/*.js")
-store.get("glob.myApp.paths") // array of paths
+await store.set("paths", "**/*.js", {
+  ignore: "**/*Test.js",
+})
+store.get("paths") // array of paths
 ```
-
-Substitute `myApp` for any key you like.
