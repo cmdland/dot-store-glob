@@ -12,5 +12,5 @@ test("glob files", async () => {
     pattern: `${__dirname}/*Test.js`,
   })
 
-  expect(store.get("glob.test").length).toBe(1)
+  expect(store.get("test").length).toBe(1)
 })
