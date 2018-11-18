@@ -1,23 +1,5 @@
 # dot-glob
 
-Glob filename matching with `dot-store`.
+dot-event glob operation
 
-![cli](https://gifer.com/i/68UI.gif)
-
-## Create store
-
-```js
-import createStore from "dot-store"
-import glob from "dot-glob"
-
-const store = glob(createStore())
-```
-
-## Glob some files
-
-```js
-await store.set("paths", "**/*.js", {
-  ignore: "**/*Test.js",
-})
-store.get("paths") // array of paths
-```
+![glob](https://media1.tenor.com/images/91c8fd4e96a1cc0ef7bb2b725679f2a2/tenor.gif?itemid=9181632)

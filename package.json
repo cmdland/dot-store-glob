@@ -1,18 +1,18 @@
 {
   "name": "dot-glob",
   "version": "2.3.0",
-  "description": "Glob filename matching with dot-store",
+  "description": "dot-event glob operation",
   "keywords": [
     "glob",
     "dot-store"
   ],
-  "author": "dot-store <oss@dot-store.io>",
+  "author": "dot-event <oss@dot-event.io>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dot-store/glob.git"
+    "url": "git+ssh://git@github.com/dot-event/glob.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dot-store/glob#readme",
+  "homepage": "https://github.com/dot-event/glob#readme",
   "operations": {
     "git": {},
     "link": {},
