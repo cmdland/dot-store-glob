@@ -1,4 +1,4 @@
-# @dot-store/glob
+# dot-glob
 
 Glob filename matching with `dot-store`.
 
@@ -8,7 +8,7 @@ Glob filename matching with `dot-store`.
 
 ```js
 import createStore from "dot-store"
-import glob from "@dot-store/glob"
+import glob from "dot-glob"
 
 const store = glob(createStore())
 ```

@@ -8,9 +8,11 @@ test("glob files", async () => {
 
   glob({ events, store })
 
-  await events.glob("test", {
+  const out = await events.glob("test", {
+    action: "storeGlob",
     pattern: `${__dirname}/*Test.js`,
   })
 
+  expect(out.length).toBe(1)
   expect(store.get("test").length).toBe(1)
 })

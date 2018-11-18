@@ -1,5 +1,5 @@
 {
-  "name": "@dot-store/glob",
+  "name": "dot-glob",
   "version": "2.3.0",
   "description": "Glob filename matching with dot-store",
   "keywords": [
@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/dot-store/glob#readme",
-  "cyclops": {
+  "operations": {
     "git": {},
     "link": {},
     "starter": {},
