@@ -1,4 +1,4 @@
-# dot-glob
+# @dot-event/glob
 
 dot-event glob operation
 

@@ -1,10 +1,10 @@
 import dotEvent from "dot-event"
-import dotStore from "dot-store"
+import dotStore from "@dot-event/store"
 import glob from "../dist/glob"
 
 test("glob files", async () => {
   const events = dotEvent()
-  const store = dotStore(events)
+  const store = dotStore({ events })
 
   glob({ events, store })
 
