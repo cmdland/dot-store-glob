@@ -10,7 +10,8 @@ test("glob files", async () => {
 
   const out = await events.glob("test", {
     action: "storeGlob",
-    pattern: `${__dirname}/*Test.js`,
+    cwd: __dirname,
+    pattern: "*Test.js",
   })
 
   expect(out.length).toBe(1)
