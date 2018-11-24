@@ -9,9 +9,9 @@ test("glob files", async () => {
   glob({ events, store })
 
   const out = await events.glob("test", {
-    action: "storeGlob",
     cwd: __dirname,
     pattern: "*Test.js",
+    save: true,
   })
 
   expect(out.length).toBe(1)
