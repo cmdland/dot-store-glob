@@ -1,12 +1,13 @@
 import dotEvent from "dot-event"
 import dotStore from "@dot-event/store"
-import glob from "../dist/glob"
+
+import dotGlob from "../"
 
 test("glob files", async () => {
   const events = dotEvent()
-  const store = dotStore({ events })
 
-  glob({ events, store })
+  dotGlob({ events })
+  dotStore({ events })
 
   const out = await events.glob("test", {
     cwd: __dirname,
@@ -15,5 +16,5 @@ test("glob files", async () => {
   })
 
   expect(out.length).toBe(1)
-  expect(store.get("test").length).toBe(1)
+  expect(events.get("test").length).toBe(1)
 })
